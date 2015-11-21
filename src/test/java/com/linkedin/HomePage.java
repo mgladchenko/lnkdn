@@ -20,13 +20,6 @@ public class HomePage {
         return PageFactory.initElements(driver, ProfilePage.class);
     }
 
-    public boolean isPageLoaded(){
-        if (driver.getTitle().contentEquals("Welcome! | LinkedIn")) {
-            return true;
-        }
-        return false;
-    }
-
     public void close() {
         driver.quit();
     }
