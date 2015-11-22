@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Linkedin UI Tests" verbose="6" time-out="400000">
+
+    <test name="Webdriver Tests">
+        <classes>
+            <class name="com.linkedin.LoginTests"></class>
+        </classes>
+    </test>
+
+</suite>

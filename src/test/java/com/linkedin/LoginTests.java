@@ -29,7 +29,8 @@ public class LoginTests {
     public Object[][] createdata() {
         return new Object[][] {
                 new Object[] { "Testautomation123","email1" },
-                new Object[] { "1234", "email2"}};
+                //new Object[] { "1234", "email2"}
+                };
     }
 
     @Test(dataProvider = "userLoginTestData")
@@ -51,7 +52,7 @@ public class LoginTests {
         }
     }
 
-    @Test
+    @Test(enabled = true)
     public void loadProfilePageTest(){
         String userPassword = "Testautomation123";
         loginRegistrationPage = PageFactory.initElements(new FirefoxDriver(), LoginRegistrationPage.class);
