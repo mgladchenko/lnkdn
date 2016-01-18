@@ -6,11 +6,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginRegistrationPage {
-    protected WebDriver driver;
+public class LoginRegistrationPage extends AbstractPage{
 
     public LoginRegistrationPage(WebDriver driver) {
-        this.driver = driver;
+        super(driver);
     }
 
     //Registration elements

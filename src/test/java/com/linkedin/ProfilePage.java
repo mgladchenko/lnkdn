@@ -2,14 +2,10 @@ package com.linkedin;
 
 import org.openqa.selenium.WebDriver;
 
-public class ProfilePage {
-    protected WebDriver driver;
+public class ProfilePage extends AbstractPage {
 
     public ProfilePage(WebDriver driver) {
-        this.driver = driver;
+        super(driver);
     }
 
-    public void close() {
-        driver.quit();
-    }
 }

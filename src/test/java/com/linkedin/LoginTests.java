@@ -52,6 +52,9 @@ public class LoginTests {
         }
     }
 
+    /**
+     *
+     */
     @Test(enabled = true)
     public void loadProfilePageTest(){
         String userPassword = "Testautomation123";

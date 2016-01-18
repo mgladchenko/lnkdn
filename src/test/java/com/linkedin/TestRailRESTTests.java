@@ -3,6 +3,7 @@ package com.linkedin;
 import com.jayway.restassured.RestAssured;
 import com.jayway.restassured.http.ContentType;
 import com.jayway.restassured.response.Response;
+import com.linkedin.rally.Rally;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.testng.Assert;
@@ -34,6 +35,7 @@ public class TestRailRESTTests {
     }
 
     @Test
+    @Rally(runID = "testcase1", caseID = "passed")
     public void test2(){
         given()
                 .header("Authorization", "Basic bXlrb2xhLmdsYWRjaGVua29AZ21haWwuY29tOlNvdWxtZTEyMw==")
